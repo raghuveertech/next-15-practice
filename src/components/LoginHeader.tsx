@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header = () => {
+const LoginHeader = () => {
   return (
     <header
       style={{
@@ -9,14 +9,13 @@ const Header = () => {
         textAlign: 'center',
       }}
     >
-      <p>Header</p>
+      <p>Login Header</p>
       <ul>
-        <li>Login</li>
-        <li>Register</li>
-        <li>Contact</li>
+        <li>Dashboard</li>
+        <li>Profile</li>
       </ul>
     </header>
   );
 };
 
-export default Header;
+export default LoginHeader;

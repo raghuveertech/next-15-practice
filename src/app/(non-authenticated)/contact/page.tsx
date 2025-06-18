@@ -1,4 +1,4 @@
-import Lib from '../_lib/page';
+import Lib from '../../_lib/page';
 import Map from './map';
 
 const Contact = () => {
