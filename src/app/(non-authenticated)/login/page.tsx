@@ -1,3 +1,7 @@
+export const metadata = {
+  title: 'User Login',
+  description: 'User Login',
+};
 const Login = () => {
   return (
     <div>

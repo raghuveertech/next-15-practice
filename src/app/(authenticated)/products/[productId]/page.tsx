@@ -4,6 +4,14 @@ type ProductDetailsProps = {
   };
 };
 
+export const generateMetadata = (props: ProductDetailsProps) => {
+  const productId = props.params.productId;
+  return {
+    title: `Product Details of ${productId}`,
+    description: `Description of Product ${productId}`,
+  };
+};
+
 const ProductDetails = (props: ProductDetailsProps) => {
   const productId = props.params.productId;
   return (
