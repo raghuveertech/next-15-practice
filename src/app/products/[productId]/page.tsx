@@ -6,6 +6,10 @@ type ProductDetailsProps = {
 
 const ProductDetails = (props: ProductDetailsProps) => {
   const productId = props.params.productId;
-  return <h1>Product Details of {productId}</h1>;
+  return (
+    <>
+      <h1>Product Details of {productId}</h1>
+    </>
+  );
 };
 export default ProductDetails;
