@@ -1,6 +1,11 @@
+'use client';
+import Link from 'next/link';
 import React from 'react';
+import './../app/global.css';
+import { usePathname } from 'next/navigation';
 
 const Header = () => {
+  const pathname = usePathname();
   return (
     <header
       style={{
@@ -11,9 +16,30 @@ const Header = () => {
     >
       <p>Header</p>
       <ul>
-        <li>Login</li>
-        <li>Register</li>
-        <li>Contact</li>
+        <li>
+          <Link
+            className={pathname === '/login' ? 'active' : ''}
+            href={'/login'}
+          >
+            Login
+          </Link>
+        </li>
+        <li>
+          <Link
+            className={pathname === '/register' ? 'active' : ''}
+            href={'/register'}
+          >
+            Register
+          </Link>
+        </li>
+        <li>
+          <Link
+            className={pathname === '/contact' ? 'active' : ''}
+            href={'/contact'}
+          >
+            Contact
+          </Link>
+        </li>
       </ul>
     </header>
   );
