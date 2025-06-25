@@ -1,3 +1,5 @@
+import PlaceOrder from './PlaceOrder';
+
 type ProductDetailsProps = {
   params: {
     productId: string;
@@ -17,6 +19,7 @@ const ProductDetails = (props: ProductDetailsProps) => {
   return (
     <>
       <h1>Product Details of {productId}</h1>
+      <PlaceOrder productId={productId} />
     </>
   );
 };
