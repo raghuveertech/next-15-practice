@@ -7,6 +7,9 @@ type ReviewDetailsProps = {
 
 const ReviewDetails = (props: ReviewDetailsProps) => {
   const { productId, reviewId } = props.params;
+  if (reviewId === '100') {
+    throw new Error('Something Went Wrong');
+  }
   return (
     <>
       <h1>
