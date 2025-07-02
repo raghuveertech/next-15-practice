@@ -3,6 +3,13 @@ type OffersListProps = {
 };
 const OffersList = async ({ searchParams }: OffersListProps) => {
   const { lang } = await searchParams;
+
+  await new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(0);
+    }, 2000);
+  });
+
   return (
     <div>
       <h1>Offers List</h1>
