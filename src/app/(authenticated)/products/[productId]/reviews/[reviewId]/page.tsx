@@ -7,9 +7,12 @@ type ReviewDetailsProps = {
 
 const ReviewDetails = (props: ReviewDetailsProps) => {
   const { productId, reviewId } = props.params;
-  if (reviewId === '100') {
+  let randomNumber = Math.random();
+  console.log(randomNumber);
+  if (randomNumber < 0.5) {
     throw new Error('Something Went Wrong');
   }
+
   return (
     <>
       <h1>
